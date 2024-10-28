@@ -1,7 +1,24 @@
 .App {
   text-align: center;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+@keyframes custom-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-custom-spin {
+  animation: custom-spin 2s linear infinite;
+}
+
+#pc
+{
+  max-width: 860px;
+  height: auto;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
